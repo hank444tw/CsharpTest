@@ -1,0 +1,7 @@
+C:\Users\hankh\Desktop\CsharpTest\CsharpTest\bin\Debug\CsharpTest.exe.config
+C:\Users\hankh\Desktop\CsharpTest\CsharpTest\bin\Debug\CsharpTest.exe
+C:\Users\hankh\Desktop\CsharpTest\CsharpTest\bin\Debug\CsharpTest.pdb
+C:\Users\hankh\Desktop\CsharpTest\CsharpTest\obj\Debug\CsharpTest.csprojAssemblyReference.cache
+C:\Users\hankh\Desktop\CsharpTest\CsharpTest\obj\Debug\CsharpTest.csproj.CoreCompileInputs.cache
+C:\Users\hankh\Desktop\CsharpTest\CsharpTest\obj\Debug\CsharpTest.exe
+C:\Users\hankh\Desktop\CsharpTest\CsharpTest\obj\Debug\CsharpTest.pdb
