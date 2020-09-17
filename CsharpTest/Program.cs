@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections; //列舉器，提供GetEnumerator()
 
 namespace MyNamespace
 {
@@ -358,6 +357,7 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //}
             //------------------------------------------------------
 
+<<<<<<< HEAD
             //---------------------列舉器(Enumerator)---------------------
             //IEnumerator介面支援非泛型集合上的簡單反覆運算
             //string[] array1 = new string[] {"零","一","二","三","四","五"};
@@ -371,6 +371,9 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //Console.WriteLine($"經過Reset()，和一次的MoveNext()，指標內容為:{enumerator.Current}");
             //------------------------------------------------------------
 
+=======
+            //--
+>>>>>>> parent of 714e58c... 列舉器(Enumerator)
 
             Console.Read();
         }
