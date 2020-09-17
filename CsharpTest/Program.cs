@@ -370,7 +370,7 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //enumerator.MoveNext();
             //Console.WriteLine($"經過Reset()，和一次的MoveNext()，指標內容為:{enumerator.Current}");
             //------------------------------------------------------------
-            
+            //12313
 
             Console.Read();
         }
