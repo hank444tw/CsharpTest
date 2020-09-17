@@ -346,12 +346,13 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //常用的集合物件：Collection、List、Set、Map
             //常用的泛型類別：List、Queue、Stack
             //List<MyClass> listMyClass = new List<MyClass>();
-            //listMyClass.Add(new MyClass() { a = 1,c = "ListAdd1"});
+            //listMyClass.Add(new MyClass() { a = 1, c = "ListAdd1" });
             //listMyClass.Add(new MyClass() { a = 2, c = "ListAdd2" });
 
-            //listMyClass.RemoveAt(0);
+            //listMyClass.RemoveAt(0); //刪除索引值0的物件
+            //listMyClass.Insert(0,new MyClass() {a = 3,c = "ListInsert"}); //插入物件於索引值0
 
-            //for(int i = 0;i < listMyClass.Count; i++)
+            //for (int i = 0; i < listMyClass.Count; i++)
             //{
             //    Console.WriteLine($"{listMyClass[i].a}{listMyClass[i].c}");
             //}
@@ -359,15 +360,15 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
 
             //---------------------列舉器(Enumerator)---------------------
             //IEnumerator介面支援非泛型集合上的簡單反覆運算
-            string[] array1 = new string[] {"零","一","二","三","四","五"};
-            IEnumerator enumerator = array1.GetEnumerator(); //實作列舉器，並透過GetEnumerator()方法來讀取araay1陣列
-            while ((enumerator.MoveNext()) && (enumerator.Current != null))
-            {
-                Console.WriteLine($"現在指標內容為:{enumerator.Current}");
-            }
-            enumerator.Reset(); //Reset回集合物件第一個元素的前面，此位置並無Current值
-            enumerator.MoveNext();
-            Console.WriteLine($"經過Reset()，和一次的MoveNext()，指標內容為:{enumerator.Current}");
+            //string[] array1 = new string[] {"零","一","二","三","四","五"};
+            //IEnumerator enumerator = array1.GetEnumerator(); //實作列舉器，並透過GetEnumerator()方法來讀取araay1陣列
+            //while ((enumerator.MoveNext()) && (enumerator.Current != null))
+            //{
+            //    Console.WriteLine($"現在指標內容為:{enumerator.Current}");
+            //}
+            //enumerator.Reset(); //Reset回集合物件第一個元素的前面，此位置並無Current值
+            //enumerator.MoveNext();
+            //Console.WriteLine($"經過Reset()，和一次的MoveNext()，指標內容為:{enumerator.Current}");
             //------------------------------------------------------------
 
 
