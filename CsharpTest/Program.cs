@@ -377,6 +377,27 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //泛型定義於System.Collections.Generic命名空間，包括List<T>、LinkedList<T>、Stack<T>、Queue<T>...
             //--------------------------------------------------------------
 
+            //---------------------ArrayList與List<T>集合類別實作---------------------
+            ////泛型不須強制轉換
+            //List<MyClass> listMyClass = new List<MyClass>();
+            //listMyClass.Add(new MyClass() { a = 1, c = "ListAdd1" });
+            //listMyClass.Add(new MyClass() { a = 2, c = "ListAdd2" });
+            //foreach (var item in listMyClass)
+            //{
+            //    Console.WriteLine($"{item.a}{item.c}");
+            //}
+
+            ////非泛型需強制轉換
+            //ArrayList arrayList = new ArrayList();
+            //arrayList.Add(new MyClass() { a = 1, c = "ListAdd1" });
+            //arrayList.Add(new MyClass() { a = 2, c = "ListAdd2" });
+
+            //foreach (var item in arrayList)
+            //{
+            //    Console.WriteLine(item.ToString()); //可透過在MyClass覆寫ToSstring方法，return回該item的內容
+            //}
+            //-------------------------------------------------------------------------
+
             Console.Read();
         }
     }
