@@ -370,7 +370,12 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //enumerator.MoveNext();
             //Console.WriteLine($"經過Reset()，和一次的MoveNext()，指標內容為:{enumerator.Current}");
             //------------------------------------------------------------
-            //12313
+
+            //---------------------泛型與非泛型集合類別---------------------
+            //泛型類別和方法具有重複使用性、型別安全、高效率
+            //非泛型定義於System.Collections命名空間，包括ArrayList、Stack、Hashtable、SortedList...
+            //泛型定義於System.Collections.Generic命名空間，包括List<T>、LinkedList<T>、Stack<T>、Queue<T>...
+            //--------------------------------------------------------------
 
             Console.Read();
         }
