@@ -398,6 +398,26 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //}
             //-------------------------------------------------------------------------
 
+            //---------------------Stack與Stack<T>集合類別實作---------------------
+            //Stack<MyClass> myClasses = new Stack<MyClass>();
+            //myClasses.Push(new MyClass() { a = 1, c = "Stack1" });
+            //myClasses.Push(new MyClass() { a = 2, c = "Stack2" });
+            //Console.WriteLine(myClasses.Peek().c); //傳回堆疊中最上面的物件
+            //foreach(var item in myClasses)
+            //{
+            //    Console.WriteLine($"{item.a}{item.c}");
+            //}
+
+            //Stack stack = new Stack();
+            //MyClass myClass = new MyClass() { a = 1, c = "Stack1" };
+            //stack.Push(myClass);
+            //stack.Push(new MyClass() { a = 2, c = "Stack2" });
+            //if (stack.Contains(myClass))
+            //    Console.WriteLine("stack堆疊內容有myClass物件");
+            //else
+            //    Console.WriteLine("stack堆疊內容無myClass物件");
+            //----------------------------------------------------------------------
+
             Console.Read();
         }
     }
