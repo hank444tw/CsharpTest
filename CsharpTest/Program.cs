@@ -399,6 +399,7 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //-------------------------------------------------------------------------
 
             //---------------------Stack與Stack<T>集合類別實作---------------------
+            //後進先出(Last In First:LIFO)
             //Stack<MyClass> myClasses = new Stack<MyClass>();
             //myClasses.Push(new MyClass() { a = 1, c = "Stack1" });
             //myClasses.Push(new MyClass() { a = 2, c = "Stack2" });
@@ -417,6 +418,7 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //else
             //    Console.WriteLine("stack堆疊內容無myClass物件");
             //----------------------------------------------------------------------
+
 
             Console.Read();
         }
