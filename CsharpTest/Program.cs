@@ -437,6 +437,29 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //Console.WriteLine(queue.Peek());
             //----------------------------------------------------------------------
 
+            //---------------------Hashtable與Dictionary<TKey,TValue>集合類別實作---------------------
+            //屬於關聯陣列(Associative Array)
+            //Dictionary<string, MyClass> dictionary = new Dictionary<string, MyClass>();
+            //dictionary.Add("Key1", new MyClass() { a = 1, c = "Dictionary1" });
+            //dictionary.Add("Key2", new MyClass() { a = 2, c = "Dictionary2" });
+            //dictionary["Key3"] = new MyClass() { a = 2, c = "Dictionary3" };
+            //foreach (KeyValuePair<string,MyClass> item in dictionary) //也可用var
+            //{
+            //    Console.WriteLine($"{item.Key}:{item.Value.a}{item.Value.c}");
+            //}
+
+            //Hashtable hashtable = new Hashtable();
+            //hashtable.Add("Key1", new MyClass() { a = 1, c = "hashtable1" });
+            //hashtable.Add("Key2", new MyClass() { a = 1, c = "hashtable2" });
+            //hashtable["Key3"] = new MyClass() { a = 2, c = "hashtable3" };
+            //Console.WriteLine(hashtable["Key1"]);
+
+            //foreach (DictionaryEntry item in hashtable) //也可用 KeyValuePair<string,MyClass>
+            //{
+            //    Console.WriteLine(item.Key);
+            //}
+            //---------------------------------------------------------------------------------------
+
             Console.Read();
         }
     }
