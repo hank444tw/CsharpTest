@@ -399,7 +399,7 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //-------------------------------------------------------------------------
 
             //---------------------Stack與Stack<T>集合類別實作---------------------
-            //後進先出(Last In First:LIFO)
+            //堆疊，後進先出(Last In First:LIFO)
             //Stack<MyClass> myClasses = new Stack<MyClass>();
             //myClasses.Push(new MyClass() { a = 1, c = "Stack1" });
             //myClasses.Push(new MyClass() { a = 2, c = "Stack2" });
@@ -419,6 +419,23 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //    Console.WriteLine("stack堆疊內容無myClass物件");
             //----------------------------------------------------------------------
 
+            //---------------------Queue與Queue<T>集合類別實作---------------------
+            //佇列，先進先出(First In First Out:FIFO)
+            //Queue<MyClass> myClasses = new Queue<MyClass>();
+            //myClasses.Enqueue(new MyClass() { a = 1,c = "Queue1"});
+            //myClasses.Enqueue(new MyClass() { a = 2, c = "Queue2" });
+            //Console.WriteLine("Peek()傳回最先存入之物件" + myClasses.Peek().c);
+            //foreach(var item in myClasses)
+            //{
+            //    Console.WriteLine($"{item.a}{item.c}");
+            //}
+
+            //Queue queue = new Queue();
+            //queue.Enqueue(new MyClass() { a = 1, c = "Queue1" });
+            //queue.Enqueue(new MyClass() { a = 2, c = "Queue2" });
+            //queue.Dequeue();
+            //Console.WriteLine(queue.Peek());
+            //----------------------------------------------------------------------
 
             Console.Read();
         }
