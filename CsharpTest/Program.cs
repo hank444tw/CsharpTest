@@ -460,6 +460,22 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //}
             //---------------------------------------------------------------------------------------
 
+            //---------------------SortedList與SortedList<TKey,TValue>---------------------
+            SortedList<int, MyClass> pairs = new SortedList<int, MyClass>();
+            pairs.Add(2, new MyClass() { a = 1, c = "hashtable1" });
+            pairs.Add(1, new MyClass() { a = 2, c = "hashtable2" });
+            Console.WriteLine(pairs[1].a);
+            foreach(var item in pairs)
+            {
+                Console.WriteLine($"{item.Key}:{item.Value.a}{item.Value.c}");
+            }
+
+
+            SortedList list = new SortedList();
+            list.Add(2, new MyClass() { a = 1, c = "hashtable1" });
+            list.Add(1, new MyClass() { a = 1, c = "hashtable1" });
+            //----------------------------------------------------------------------------
+
             Console.Read();
         }
     }
