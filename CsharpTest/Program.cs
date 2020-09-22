@@ -482,7 +482,7 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //    int a = 5;
             //    int b = a / 0;
             //}
-            //catch(Exception ex)
+            //catch(Exception ex) //可以捕捉所有例外
             //{
             //    Console.WriteLine(ex.ToString());
             //}
@@ -491,8 +491,6 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //    Console.WriteLine("執行finally區塊");
             //}
             //-----------------------------------------------------------------------------
-
-            Console.Read();
         }
     }
 }
