@@ -140,6 +140,17 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
 
     delegate void delegatefun();
 
+    class MyException : Exception //繼承Exception類別
+    {
+        public override string Message //覆寫Message屬性
+        {
+            get //唯讀屬性
+            {
+                return "這是MyException類別覆寫Exception類別的Message屬性";
+            }
+        }
+    }
+
     class Program
     {
         //列舉(Enumeration)資料型別是常數的集合，不可定義在Main()裡面
@@ -539,7 +550,21 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //}
             //-------------------------------------------------------
 
-
+            //---------------------例外類別繼承---------------------
+            //try
+            //{
+            //    int a = 5;
+            //    throw new MyException();
+            //}
+            //catch (MyException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+            //finally //不論是否有執行catchStatements都會執行finallyStatements
+            //{
+            //    Console.WriteLine("執行finally區塊");
+            //}
+            //--------------------------------------------------------
 
             Console.Read();
         }
