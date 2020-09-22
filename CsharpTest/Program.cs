@@ -461,20 +461,36 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //---------------------------------------------------------------------------------------
 
             //---------------------SortedList與SortedList<TKey,TValue>---------------------
-            SortedList<int, MyClass> pairs = new SortedList<int, MyClass>();
-            pairs.Add(2, new MyClass() { a = 1, c = "hashtable1" });
-            pairs.Add(1, new MyClass() { a = 2, c = "hashtable2" });
-            Console.WriteLine(pairs[1].a);
-            foreach(var item in pairs)
-            {
-                Console.WriteLine($"{item.Key}:{item.Value.a}{item.Value.c}");
-            }
+            //SortedList<int, MyClass> pairs = new SortedList<int, MyClass>();
+            //pairs.Add(2, new MyClass() { a = 1, c = "hashtable1" });
+            //pairs.Add(1, new MyClass() { a = 2, c = "hashtable2" });
+            //Console.WriteLine(pairs[1].a);
+            //foreach(var item in pairs)
+            //{
+            //    Console.WriteLine($"{item.Key}:{item.Value.a}{item.Value.c}");
+            //}
 
 
-            SortedList list = new SortedList();
-            list.Add(2, new MyClass() { a = 1, c = "hashtable1" });
-            list.Add(1, new MyClass() { a = 1, c = "hashtable1" });
+            //SortedList list = new SortedList();
+            //list.Add(2, new MyClass() { a = 1, c = "hashtable1" });
+            //list.Add(1, new MyClass() { a = 1, c = "hashtable1" });
             //----------------------------------------------------------------------------
+
+            //---------------------try 例外處理(Exception Handle)語法---------------------
+            //try
+            //{
+            //    int a = 5;
+            //    int b = a / 0;
+            //}
+            //catch(Exception ex)
+            //{
+            //    Console.WriteLine(ex.ToString());
+            //}
+            //finally //不論是否有執行catchStatements都會執行finallyStatements
+            //{
+            //    Console.WriteLine("執行finally區塊");
+            //}
+            //-----------------------------------------------------------------------------
 
             Console.Read();
         }
