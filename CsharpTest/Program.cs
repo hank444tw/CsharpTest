@@ -491,6 +491,37 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //    Console.WriteLine("執行finally區塊");
             //}
             //-----------------------------------------------------------------------------
+
+            //---------------------例外類別---------------------
+            //try
+            //{
+            //    string[] vs = new string[] { "0", "1", "2" };
+            //    Console.WriteLine(vs[3]);
+            //}
+            //catch (ArgumentOutOfRangeException ex) //當引數值超過呼叫方法所規定的範圍
+            //{
+            //    Console.WriteLine("ArgumentOutOfRangeException");
+            //}
+            //catch (DivideByZeroException ex) //當除數為0時所產生的錯誤
+            //{
+            //    Console.WriteLine("DivideByZeroException");
+            //}
+            //catch(IndexOutOfRangeException ex) //索引值超出陣列所允許的範圍
+            //{
+            //    Console.WriteLine("IndexOutOfRangeException");
+            //    Console.WriteLine($"例外處理ex的型別:{ex.GetType()}");
+            //    Console.WriteLine($"例外ex的錯誤訊息:{ex.Message}");
+            //    Console.WriteLine($"發生例外的程式:{ex.Source}");
+            //    Console.WriteLine($"發生例外的方法是:{ex.TargetSite.Name}");
+            //    Console.WriteLine($"錯誤之處:{ex.StackTrace}");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("執行finally區塊");
+            //}
+            //-------------------------------------------------
+
+            Console.Read();
         }
     }
 }
