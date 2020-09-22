@@ -522,6 +522,23 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //-------------------------------------------------
 
             //---------------------自訂例外處理---------------------
+            //使用throw敘述
+            //可new一個例外處理類別，或是自己定一個新類別使用
+            //try
+            //{
+            //    int a = 5;
+            //    throw new ArgumentOutOfRangeException();
+            //}
+            //catch (ArgumentOutOfRangeException ex)
+            //{
+            //    Console.WriteLine(ex.ToString());
+            //}
+            //finally //不論是否有執行catchStatements都會執行finallyStatements
+            //{
+            //    Console.WriteLine("執行finally區塊");
+            //}
+            //-------------------------------------------------------
+
 
 
             Console.Read();
