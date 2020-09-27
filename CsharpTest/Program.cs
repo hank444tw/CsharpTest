@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections; //列舉器，提供GetEnumerator()
+using System.IO; //可管理檔案系統
 
 namespace MyNamespace
 {
@@ -565,6 +566,38 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //    Console.WriteLine("執行finally區塊");
             //}
             //--------------------------------------------------------
+
+            //---------------------DirectoryInfo類別---------------------
+            //using System.IO;
+            //目錄相關資訊類別主要用來建立資料夾和搬移資料夾的工作
+            //Directory和DirectoryInfo，前者為靜態方式
+            //DirectoryInfo info = new DirectoryInfo(@"C:\Users\hankh\Desktop\test");
+            //if (info.Exists)
+            //    Console.WriteLine("存在");
+            //else
+            //{
+            //    Console.WriteLine("不存在 \n 開始建立資料夾");
+            //    info.Create();
+            //    info.Refresh();
+            //}
+
+            //Console.WriteLine($"資料夾路徑:{info.FullName}");
+            //Console.WriteLine($"建立時間:{info.CreationTime}");
+            //Console.WriteLine($"最後存取時間:{info.LastAccessTime}");
+            //Console.WriteLine($"資料夾名稱:{info.Name}");
+            //Console.WriteLine($"根目錄:{info.Parent}");
+
+            //Console.WriteLine("刪除資料夾");
+            //try
+            //{
+            //    info.Delete(true); //參數true，代表刪除其下所有檔案和目錄
+            //    Console.WriteLine("刪除成功");
+            //}
+            //catch(Exception ex)
+            //{
+            //    Console.WriteLine(ex.ToString());
+            //}
+            //---------------------DirectoryInfo類別---------------------
 
             Console.Read();
         }
