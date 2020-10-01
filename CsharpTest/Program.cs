@@ -599,6 +599,22 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //}
             //---------------------DirectoryInfo類別---------------------
 
+            //---------------------FileInfo類別---------------------
+            //File、FileInfo，前者為靜態方式
+            //DirectoryInfo directoryInfo = new DirectoryInfo(@"C:\Users\hankh\Desktop\CsharpTest");
+            //if (directoryInfo.Exists)
+            //{
+            //    Console.WriteLine("資料夾存在");
+            //    FileInfo[] fileInfo = directoryInfo.GetFiles(); //取得資料夾內的檔案，傳回fileInfo陣列
+            //    foreach (FileInfo file in fileInfo)
+            //    {
+            //        Console.WriteLine($"檔案路徑:{file.FullName}");
+            //        Console.WriteLine($"最近寫入時間:{file.LastWriteTime}");
+            //        Console.WriteLine($"檔案大小:{file.Length} Bytes");
+            //    }
+            //}
+            //---------------------FileInfo類別---------------------
+
             Console.Read();
         }
     }
