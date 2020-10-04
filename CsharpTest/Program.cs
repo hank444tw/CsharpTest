@@ -615,6 +615,43 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //}
             //---------------------FileInfo類別---------------------
 
+            //---------------------檔案讀寫---------------------
+            ////新增
+            //if(!File.Exists(@"C:\Users\hankh\Desktop\CsharpTest\test.txt"))
+            //{
+            //    try
+            //    {
+            //        File.Create(@"C:\Users\hankh\Desktop\CsharpTest\test.txt").Close();
+            //    }
+            //    catch(Exception ex)
+            //    {
+            //        Console.WriteLine(ex.ToString());
+            //    }
+            //}
+
+            ////寫入
+            //FileInfo fileInfo = new FileInfo(@"C:\Users\hankh\Desktop\CsharpTest\test.txt");
+            //StreamWriter streamWriter = fileInfo.AppendText(); //可將資料寫入在檔案最後面
+            //streamWriter.WriteLine("這是streamWriter物件寫入的1");
+            //streamWriter.WriteLine("這是streamWriter物件寫入的2");
+            //streamWriter.Flush(); //將存在Buffer緩衝區的資料寫入檔案
+            //streamWriter.Close(); //關閉資料流
+            //Console.WriteLine("資料寫入完畢");
+
+            ////讀出
+            //StreamReader reader = fileInfo.OpenText();
+            //while (reader.Peek() >= 0) //回傳-1表示檔案結束
+            //{
+            //    Console.WriteLine(reader.ReadLine()); //讀取一行
+            //    Console.WriteLine("---------");
+            //}
+            //reader.Close();
+
+            ////刪除
+            //fileInfo.Delete();
+            //Console.WriteLine("刪除成功"); //讀取一行
+            //---------------------------------------------------------
+
             Console.Read();
         }
     }
