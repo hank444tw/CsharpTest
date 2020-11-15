@@ -390,45 +390,45 @@ namespace CsharpTest //命名空間：用來定義類別的範圍
             //--------------------------------------------------------------
 
             //---------------------ArrayList與List<T>集合類別實作---------------------
-            ////泛型不須強制轉換
-            //List<MyClass> listMyClass = new List<MyClass>();
-            //listMyClass.Add(new MyClass() { a = 1, c = "ListAdd1" });
-            //listMyClass.Add(new MyClass() { a = 2, c = "ListAdd2" });
-            //foreach (var item in listMyClass)
-            //{
-            //    Console.WriteLine($"{item.a}{item.c}");
-            //}
+            //泛型不須強制轉換
+            List<MyClass> listMyClass = new List<MyClass>();
+            listMyClass.Add(new MyClass() { a = 1, c = "ListAdd1" });
+            listMyClass.Add(new MyClass() { a = 2, c = "ListAdd2" });
+            foreach (var item in listMyClass)
+            {
+                Console.WriteLine($"{item.a}{item.c}");
+            }
 
-            ////非泛型需強制轉換
-            //ArrayList arrayList = new ArrayList();
-            //arrayList.Add(new MyClass() { a = 1, c = "ListAdd1" });
-            //arrayList.Add(new MyClass() { a = 2, c = "ListAdd2" });
+            //非泛型需強制轉換
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add(new MyClass() { a = 1, c = "ListAdd1" });
+            arrayList.Add(new MyClass() { a = 2, c = "ListAdd2" });
 
-            //foreach (var item in arrayList)
-            //{
-            //    Console.WriteLine(item.ToString()); //可透過在MyClass覆寫ToSstring方法，return回該item的內容
-            //}
+            foreach (var item in arrayList)
+            {
+                Console.WriteLine(item.ToString()); //可透過在MyClass覆寫ToSstring方法，return回該item的內容
+            }
             //-------------------------------------------------------------------------
 
             //---------------------Stack與Stack<T>集合類別實作---------------------
             //堆疊，後進先出(Last In First:LIFO)
-            //Stack<MyClass> myClasses = new Stack<MyClass>();
-            //myClasses.Push(new MyClass() { a = 1, c = "Stack1" });
-            //myClasses.Push(new MyClass() { a = 2, c = "Stack2" });
-            //Console.WriteLine(myClasses.Peek().c); //傳回堆疊中最上面的物件
-            //foreach(var item in myClasses)
-            //{
-            //    Console.WriteLine($"{item.a}{item.c}");
-            //}
+            Stack<MyClass> myClasses = new Stack<MyClass>();
+            myClasses.Push(new MyClass() { a = 1, c = "Stack1" });
+            myClasses.Push(new MyClass() { a = 2, c = "Stack2" });
+            Console.WriteLine(myClasses.Peek().c); //傳回堆疊中最上面的物件
+            foreach (var item in myClasses)
+            {
+                Console.WriteLine($"{item.a}{item.c}");
+            }
 
-            //Stack stack = new Stack();
-            //MyClass myClass = new MyClass() { a = 1, c = "Stack1" };
-            //stack.Push(myClass);
-            //stack.Push(new MyClass() { a = 2, c = "Stack2" });
-            //if (stack.Contains(myClass))
-            //    Console.WriteLine("stack堆疊內容有myClass物件");
-            //else
-            //    Console.WriteLine("stack堆疊內容無myClass物件");
+            Stack stack = new Stack();
+            MyClass myClass = new MyClass() { a = 1, c = "Stack1" };
+            stack.Push(myClass);
+            stack.Push(new MyClass() { a = 2, c = "Stack2" });
+            if (stack.Contains(myClass))
+                Console.WriteLine("stack堆疊內容有myClass物件");
+            else
+                Console.WriteLine("stack堆疊內容無myClass物件");
             //----------------------------------------------------------------------
 
             //---------------------Queue與Queue<T>集合類別實作---------------------
