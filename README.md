@@ -1,5 +1,8 @@
 # CsharpTest
-C#練習 "Visual C# 2017 程式設計經典" 補足相關知識和語法能力    
+C#練習 "Visual C# 2017 程式設計經典" 補足相關知識和語法能力  
+
+* 開發工具
+  1. Visual Studio 2017
 
 [程式碼](https://github.com/hank444tw/CsharpTest/blob/master/CsharpTest/Program.cs)   
 
